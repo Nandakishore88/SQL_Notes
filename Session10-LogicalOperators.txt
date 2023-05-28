@@ -41,12 +41,11 @@ select * from courses where course_name not like "%data%";
 +-----------+----------------+---------------------------+------------+
 
 
-All students from bangalore who joined through linked in and having less than 8 years of exp;
-
+All students from bangalore who joined through linked in and having less than 8 years of exp:::
 select * from students where years_of_exp < 8 and and source_of_joining = 'linkedin' and location='bangalore';
 
 
-I want all people who do not fall between 8 to 12 years of exp;
+I want all people who do not fall between 8 to 12 years of exp:::
 
 select * from students where years_of_exp<8 or years_of_exp>12;
 
@@ -98,24 +97,3 @@ CASE
     WHEN student_company in ('flipkart','walmart','microsoft') THEN 'product based'
 	ELSE 'service based'
 END as company_type from students;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
